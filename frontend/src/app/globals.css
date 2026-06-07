@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme tokens */
+  --background: #F5F7FB;
+  --foreground: #0B1220;
+  --surface: #FFFFFF;
+  --primary: #0F172A; /* heading/text accent */
+  --secondary: #0D9488;
+  --brand: #0F172A; /* interactive primary surfaces */
+  --brand-contrast: #FFFFFF; /* text/icon on brand surfaces */
+  --accent: #C8A96B;
+  --success: #15803D;
+  --warning: #D97706;
+  --danger: #B91C1C;
+  --text-primary: #0B1220;
+  --text-muted: #475569;
+  --border: #E2E8F0;
+  --input-bg: #FFFFFF;
+  --input-text: #0B1220;
+  --input-placeholder: #64748B;
+}
+
+html[data-theme="dark"] {
+  --background: #0B1220;
+  --foreground: #E5E7EB;
+  --surface: #111827;
+  --primary: #E5E7EB; /* headings/labels on dark surfaces */
+  --secondary: #2DD4BF;
+  --brand: #14B8A6; /* CTA / user bubble background in dark mode */
+  --brand-contrast: #052E2B; /* text/icon over brand in dark mode */
+  --accent: #D4A853;
+  --border: #334155;
+  --text-primary: #E5E7EB;
+  --text-muted: #94A3B8;
+  --input-bg: #0F172A;
+  --input-text: #E5E7EB;
+  --input-placeholder: #94A3B8;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+/* Keep form controls readable on both themes */
+input,
+textarea,
+select {
+  color: var(--input-text);
+  background-color: var(--input-bg);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

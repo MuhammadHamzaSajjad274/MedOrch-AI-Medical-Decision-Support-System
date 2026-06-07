@@ -1,0 +1,75 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env.local
+
+# Databases and local data
+*.db
+*.sqlite3
+medical_assistant.db
+backend/medical_assistant.db
+
+# ML models and datasets (large binaries — download locally, see docs/VISION_WEIGHTS.md)
+models/
+backend/app/services/vision/**/data/
+backend/app/services/vision/**/weights/
+backend/app/services/vision/**/__MACOSX/
+backend/app/services/vision/**/HAM10000*/
+backend/app/services/vision/skin_lesion/HAM10000_images_part_*/
+backend/app/services/vision/skin_lesion/HAM10000_metadata.csv
+backend/app/services/vision/skin_lesion/hmnist_*.csv
+# Kaggle extracts sometimes land outside data/ (e.g. chest_xray/chest_xray/)
+backend/app/services/vision/chest_xray/chest_xray/
+backend/app/services/vision/**/*.jpg
+backend/app/services/vision/**/*.jpeg
+backend/app/services/vision/**/*.png
+*.pth
+*.onnx
+*.bin
+*.safetensors
+
+# Hugging Face / torch caches (user machine)
+.cache/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and exports
+*.log
+logs/
+
+# Docker
+.docker/
+
+# Coverage
+htmlcov/
+.coverage
+coverage.xml
