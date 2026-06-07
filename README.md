@@ -1,8 +1,8 @@
-# 🏥 Multi-Agent Medical Assistant
+# 🏥MedOrch AI Medical Decision Support System
 
 > A production-style AI health platform combining **multi-agent orchestration**, **RAG**, **medical imaging**, **voice interaction**, and **authenticated patient context** — built end-to-end as a full-stack ML engineering showcase.
 
-> ⚠️ **Disclaimer:** For educational and informational use only. Not a substitute for a licensed clinician or medical device.
+>  **Disclaimer:** For educational and informational use only. Not a substitute for a licensed clinician or medical device.
 
 ---
 
